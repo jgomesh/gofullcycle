@@ -1,0 +1,10 @@
+version: '3'
+services:
+  go:
+    build:
+      context: go
+      dockerfile: Dockerfile
+    image: jgomesh/gofull:latest
+    container_name: gofull
+    volumes:
+      - ./go:/go/src/app
